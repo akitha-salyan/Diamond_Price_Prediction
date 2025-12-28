@@ -38,6 +38,7 @@ The dataset contains information such as carat, depth, table, dimensions, and pr
 
 ---
 **Setup Instructions**
+
 1️⃣ Clone the Repository
 git clone  https://github.com/akitha-salyan/Diamond_Price_Prediction.git
 
@@ -53,4 +54,4 @@ http://127.0.0.1:5000/
 ---
 Akitha
 
-MCA Student
+-MCA Student
