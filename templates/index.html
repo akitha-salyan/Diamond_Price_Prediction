@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diamond Price Prediction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Arimo&family=Hind:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="login">
+    <h1>Diamond Price Prediction</h1>
+
+    <form action="{{ url_for('predict')}}" method="post">
+
+      <div class="textbox">
+        <label for="Carat">Enter Carat</label><br>
+        <input type="text" name="Carat" placeholder="Weight of the diamond (0.2-5.01)" required />
+      </div>
+
+      <div class="textbox">
+        <label for="Table">Enter Table</label><br>
+        <input type="text" name="Table" placeholder="Width of top of diamond (43-95)" required />
+      </div>
+
+      <div class="textbox">
+        <label for="Depth">Enter Depth</label><br>
+        <input type="text" name="Depth" placeholder="Total Depth Percentage (43-79)" required />
+      </div>
+
+      <div class="textbox">
+        <label for="X">Enter X</label><br>
+        <input type="text" name="X" placeholder="Length in mm (0-10.74)" required />
+      </div>
+
+      <div class="textbox">
+        <label for="Y">Enter Y</label><br>
+        <input type="text" name="Y" placeholder="Width in mm (0-58.9)" required />
+      </div>
+
+      <div class="textbox">
+        <label for="Z">Enter Z</label><br>
+        <input type="text" name="Z" placeholder="Depth in mm (0-31.8)" required />
+      </div>
+
+      <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <div class="pred">
+      {{ prediction_text }}
+    </div>
+  </div>
+</body>
+</html>
