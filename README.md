@@ -3,7 +3,7 @@
 The Diamond Price Prediction project is designed to analyze diamond attributes and predict their prices using machine learning techniques. The system identifies patterns from historical data and provides accurate price estimates.
 
 ---
-**Objective**
+**Objective** 
 
 The main objective of this project is to predict the price of a diamond based on its physical characteristics, helping users understand price trends using data-driven predictions.
 
